@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost Island Survival</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-shell">
+      <div id="top-bar">
+        <div class="title-block">
+          <div class="game-title">LOST ISLAND</div>
+          <div class="subtitle">SURVIVAL</div>
+        </div>
+        <div id="statusLine">Beach camp established</div>
+      </div>
+
+      <div id="main-layout">
+        <canvas id="gameCanvas" width="1280" height="720"></canvas>
+
+        <aside id="sidebar">
+          <section class="panel">
+            <h3>Inventory</h3>
+            <div id="inventoryList"></div>
+          </section>
+
+          <section class="panel">
+            <h3>Crafting</h3>
+            <div id="craftingList"></div>
+          </section>
+
+          <section class="panel">
+            <h3>Quest Log</h3>
+            <div id="questList"></div>
+          </section>
+        </aside>
+      </div>
+
+      <div id="bottomHud">
+        <div id="statsBar"></div>
+        <div id="controlsHint">Move: WASD / Arrows | Run: Shift | Attack: Left Click | Gather/Interact: E | Dodge: Space</div>
+      </div>
+
+      <div id="dialogueBox" class="hidden"></div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
